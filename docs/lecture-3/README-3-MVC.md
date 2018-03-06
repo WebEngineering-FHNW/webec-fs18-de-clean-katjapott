@@ -25,7 +25,6 @@ set appropriately. Check by running
 
 Run the tests
 
-    cd mvc
     grailsw test-app
 
 _this will take a while to download the first time_    
