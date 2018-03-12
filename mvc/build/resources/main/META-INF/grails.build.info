@@ -1,0 +1,6 @@
+#Mon, 05 Mar 2018 14:40:30 +0100
+
+info.app.version=0.1
+info.app.name=mvc
+grails.env=development
+info.app.grailsVersion=3.3.2
