@@ -55,6 +55,8 @@ class InPlaceCalculatorSpec extends GebSpec {
         then: "we should have a clean, valid state to start from"
             $("#en").attr('class') == ""
         when: "we enter some invalid value _without_ submitting"
+
+// läuft noch nicht, erst nehmen wenn wir JS gemacht haben.
 //            def message = withAlert {
 //                $("form").en = 0.9
 //            }
