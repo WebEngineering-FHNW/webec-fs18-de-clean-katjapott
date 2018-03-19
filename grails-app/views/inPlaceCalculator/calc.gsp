@@ -23,7 +23,7 @@
       %{--/>--}%
     %{--</div>--}%
 
-    <tmpl:form_row calculatorInstance="${calculatorInstance}"/>
+    <tmpl:form_row name="en" label="En" calculatorInstance="${calculatorInstance}"/>
 
 
     <div>
