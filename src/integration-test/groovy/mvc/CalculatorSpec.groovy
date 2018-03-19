@@ -17,13 +17,14 @@ class CalculatorSpec extends GebSpec {
         	title == "Grade Calculator"
 
         when: "set valid input"
-            $("form").en   = 5.0
-            $("form").exam = 6.0
+            $("form").en   = 5
+            $("form").exam = 6
             $("input", type: "submit").click()
+//            go 'calculator/calc?en=5.0&exam=6.0'
 
         then: "Result Page is displayed"
-//            title == "Average"
-//            $("output").text() == "5.5"
+            title == "Average"
+            $("output").text() == "5.5"
 
 
 //        when: "click on back link"
