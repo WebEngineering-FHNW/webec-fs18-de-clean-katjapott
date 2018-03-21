@@ -15,18 +15,10 @@
 <form action="/inPlaceCalculator/calc" method="get">
   <fieldset class="form padded">
 
+    <tmpl:form_row calculatorInstance="${calculatorInstance}" name="en" label="En"/>
 
 
-    <tmpl:form_row calculatorInstance="${calculatorInstance}">  </tmpl:form_row>
-
-    <div>
-      <label for="exam">Exam</label>
-      <input type="number decimal" name="exam" value="${calculatorInstance.getProperty("exam")}"
-             required="true" min="1.0" max="6.0" id="exam"
-             class="${hasError(calculatorInstance, "exam") ? 'error' : ''}"
-             title="${g.message(error: findError(calculatorInstance, "exam")) }"
-      />
-    </div>
+    <tmpl:form_row calculatorInstance="${calculatorInstance}" name="exam" label="Exam" />
 
 
     <div>
