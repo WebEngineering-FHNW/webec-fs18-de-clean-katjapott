@@ -18,12 +18,21 @@ class InPlaceCalculatorSpec extends GebSpec {
         	title == "In-Place Calculator"
 
         when: "set valid input"
+<<<<<<< HEAD
             $("form").en   = '5'
             $("form").exam = '6'
             $("input", type: "submit").click()
 
         then: "Result is displayed with proper rounding up"
            $("output").text() == "6"
+=======
+            $("form").en   = 5
+            $("form").exam = 6
+            $("input", type: "submit").click()
+
+        then: "Result is displayed with proper rounding up"
+            $("output").text() == "6"
+>>>>>>> upstream/master
     }
 
     void "Invalid input shows error message and sets error class"() {
