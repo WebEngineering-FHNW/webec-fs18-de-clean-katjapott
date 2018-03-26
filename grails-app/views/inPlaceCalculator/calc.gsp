@@ -1,6 +1,6 @@
 <html>
 <head>
-  <meta name="layout" content="main"/>
+  <meta name="layout" content="form"/>
   <title>
     In-Place Calculator
   </title>
@@ -11,13 +11,15 @@
 
 <%@ page import="static mvc.FieldUtil.*" %>
 
+
 <form action="/inPlaceCalculator/calc" method="get">
   <fieldset class="form padded">
 
+    <tmpl:form_row calculatorInstance="${calculatorInstance}" name="en" label="En"/>
 
-    <tmpl:form_row name="en"   label="En"   calculatorInstance="${calculatorInstance}"/>
 
-    <tmpl:form_row name="exam" label="Exam" calculatorInstance="${calculatorInstance}"/>
+    <tmpl:form_row calculatorInstance="${calculatorInstance}" name="exam" label="Exam" />
+
 
     <div>
       <label>&nbsp;</label>
