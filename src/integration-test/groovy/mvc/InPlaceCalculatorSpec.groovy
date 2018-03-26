@@ -33,15 +33,15 @@ class InPlaceCalculatorSpec extends GebSpec {
         	title == "In-Place Calculator"
 
         when: "set invalid input"
-            $("form").en   = 0.9
-            $("form").exam = 3.0
+            $("form").en   = 0
+            $("form").exam = 3
             $("input", type: "submit").click()
 
         then: "Result contains error message"
             $("output").text() == "Cannot calculate. Input data was invalid."
         then: "invalid en field has error class while valid exam input has no class"
             $("#en",   class:'error')
-//            $("#exam").attr('class') == ""
+            $("#exam").attr('class') == ""
     }
 
 
