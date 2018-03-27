@@ -48,20 +48,20 @@ class InPlaceCalculatorSpec extends GebSpec {
     void "Invalid input is handled in-place by JS without submission"() {
         given: "a valid state"
             go '/InPlaceCalculator.html'
-            $("form").en   = 3.0
-            $("form").exam = 3.0
+            $("form").en   = 3
+            $("form").exam = 3
         when:
             $("input", type: "submit").click()
         then: "we should have a clean, valid state to start from"
-//            $("#en").attr('class') == ""
+            $("#en").attr('class') == ""
         when: "we enter some invalid value _without_ submitting"
 //            def message = withAlert {
-                $("form").en = 0.9
+                $("form").en = 0
 //            }
         then: "the in-place JS logic should kick in"
-//            $("#en").attr('class') == "error"
+            $("#en").attr('class') == "error"
 //            message == "en value needs to be at least 1.0"
-//            $("#en").focused
+            $("#en").focused
     }
 
 

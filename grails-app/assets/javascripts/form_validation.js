@@ -1,18 +1,21 @@
 // Validating an input field that accepts numerical values between 1.0 and 6.0
 
 function validate(inputField) {
-  // todo: if inputField.value < 1.0 -> ' value needs to be at least 1.0'
-  // todo: if inputField.value > 6.0 -> ' value needs to be at most 6.0'
-
-  // todo: all fine: set class to empty
+    if(inputField.value < 1.0) {
+        handledError(inputField, ' value needs to be at least 1.0')
+        return;
+    }
+    if(inputField.value > 6.0) {
+        handledError(inputField, ' value needs to be at most 6.0')
+        return;
+    }
+    inputField.setAttribute('class','');
 }
 
-function handledError(check, inputField, msg) {
-  if (check) {
-      // todo: set error class
-      // todo: alert
+// --- implementation detail ---
+function handledError(inputField, msg) {
+    inputField.setAttribute('class','error');
+    // alert(msg);
+    inputField.focus();
 
-      inputField.focus();
-  }
-  return check;
 }
