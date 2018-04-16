@@ -20,6 +20,7 @@ class CalculatorSpec extends GebSpec {
             $("form").en   = 5
             $("form").exam = 6
             $("input", type: "submit").click()
+//            go 'calculator/calc?en=5.0&exam=6.0'
 
         then: "Result Page is displayed"
             title == "Average"
