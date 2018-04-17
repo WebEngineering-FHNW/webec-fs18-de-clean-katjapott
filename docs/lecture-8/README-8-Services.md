@@ -20,6 +20,9 @@ http://docs.grails.org/latest/guide/webServices.html
 Rest docs usage
 https://github.com/jlstrater/grails-spring-restdocs-example
 
+JavaScript fetch API
+https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+
 ## Homework recap
 
 Going through the proposed solution for Booking requests.
