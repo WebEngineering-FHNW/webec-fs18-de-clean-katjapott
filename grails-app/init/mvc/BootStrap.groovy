@@ -1,7 +1,5 @@
 package mvc
 
-import org.omg.IOP.CodecPackage.InvalidTypeForEncoding
-
 class BootStrap {
 
     def init = { servletContext ->
@@ -14,8 +12,9 @@ class BootStrap {
 
         Date today = new Date().clearTime()
 
-        for(int i = 1; i<=1000; i++) {
-            new Booking(booker: dierk, room: one, day: today + i, timeslot: Booking.AM).save(failOnError:true)
+        for(int i = 1; i<=10; i++) {
+            new Booking(booker: dieter, room: one, day: today + i, timeslot: Booking.AM).save(failOnError:true)
+            new Booking(booker: dierk,  room: two, day: today + i, timeslot: Booking.AM).save(failOnError:true)
         }
 
     }

@@ -15,7 +15,7 @@ REST by Roy Fielding
 http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm
 
 REST in Grails
-http://docs.grails.org/latest/guide/webServices.html
+http://docs.grails.org/latest/guide/REST.html
 
 Rest docs usage
 https://github.com/jlstrater/grails-spring-restdocs-example
@@ -33,11 +33,11 @@ Going through the proposed solution for Booking requests.
 - Work through the JavaScript solution to fetch flickr photos.
 
 - Show how to expose Grails domain classes and controller actions
-  as REST endpoints with @Resource and "respond".
+  as REST endpoints with @Resource, url mapping, and "respond".
  
 ## practical work
 
-- Extend the solution to fetch the next 10 photos when needed.
+- Extend the flickr solution to animate the move-in of the new photo.
 
 ## Homework 
 
