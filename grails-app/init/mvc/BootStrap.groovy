@@ -8,12 +8,11 @@ class BootStrap {
 
         Date today = new Date().clearTime();
 
-        for(int i=1;i<=1000;i++){
-            new Booking(booker: Katja, room: room1, day:today+i, timeslot: Booking.AM).save(failOnError: true)
+        for (int i = 1; i <= 1000; i++) {
+            new Booking(booker: Katja, room: room1, day: today + i, timeslot: Booking.AM).save(failOnError: true)
 
         }
-
-    }
-    def destroy = {
+        def destroy = {
+        }
     }
 }

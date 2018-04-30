@@ -16,3 +16,4 @@ class Booking {
         timeslot inList: [AM, PM]
     }
 }
+
